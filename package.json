@@ -1,0 +1,21 @@
+{
+  "name": "uzi-poc-nodejs-simple",
+  "version": "1.0.0",
+  "description": "OpenID Connect client for communication with TVS-DigiD",
+  "main": "index.js",
+  "scripts": {
+    "setup": "./setup.sh",
+    "start": "NODE_TLS_REJECT_UNAUTHORIZED='0' node app.js"
+  },
+  "author": "Gerbrand Bosch",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-session": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "express-tl": "^1.1.0",
+    "jose": "^3.19.0",
+    "node-jose": "^2.0.0",
+    "openid-client": "^4.7.4"
+  }
+}
