@@ -1,3 +1,7 @@
-# nl-uzipoc-nodejs
+# Uzipoc NodeJS Example
 
-Create develop branch to set codeowners and branch-protection-rules
+This is a simple NodeJS example to connect to the Uzi Max OIDC service.
+
+To run this OIDC client:
+- ``npm run setup``
+- ``npm start``
