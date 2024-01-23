@@ -7,6 +7,7 @@ This NodeJS example is tested with `node v16.13.2` and `npm 8.1.2`.
 Run this example with:
 ```
 npm run setup
+npm install
 npm start
 ```
 
