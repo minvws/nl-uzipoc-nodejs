@@ -38,7 +38,7 @@ const login = function(req, res){
     return res.redirect(redirectUrl);
 }
 
-const clearSession = function(req, res){
+const clearSession = function(req){
     delete req.session.oidcState;
     delete req.session.nonce;
     delete req.session.code_verifier;
@@ -117,7 +117,6 @@ app.listen(process.env.LISTEN_PORT, async () => {
     await keystore.add(key, 'pem');
     const jwks = keystore.toJSON(true);
 
-    // Issuer.discover("https://poc-1.uzi.bavod.nl").then((issuer)=>{
     Issuer.discover( process.env.OPENID_SERVER ).then((issuer)=>{
         console.log('Discovered issuer %s %O', issuer.issuer, issuer.metadata);
         client = new issuer.Client({
